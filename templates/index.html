@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentines Day</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .envelope-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .envelope {
+            width: 300px; /* Adjust the width as needed */
+            height: 225px; /* Adjust the height as needed */
+            background-color: red;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: bounce 1s infinite alternate; /* Add bouncing animation */
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="envelope-container">
+    <div class="envelope">
+        <img src="{{ url_for('static', filename='heart.png') }}" alt="Heart" width="100">
+    </div>
+</div>
+
+<script>
+    $('.envelope').click(function() {
+        window.location.href = '/letter';
+    });
+</script>
+
+</body>
+</html>
+
+</html>
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentines Day</title>
+    <style>
+        .letter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .letter {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 500px; /* Limit the maximum width */
+            padding: 10px; /* Reduced padding */
+            background-color: #fce4ec; /* Light pink background color */
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .letter:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px; /* Adjusted positioning to top right corner */
+            width: 50px; /* Size of the heart */
+            height: 50px; /* Size of the heart */
+            background-image: url('{{ url_for("static", filename="heart.png") }}'); /* Heart image */
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+        }
+
+        .letter-content {
+            font-family: 'Cursive', cursive; /* Fancy font */
+            font-size: 14px; /* Reduced font size */
+            line-height: 1.6;
+            text-align: center;
+            font-style: italic; /* Italicized */
+        }
+    </style>
+</head>
+<body>
+
+<div class="letter-container">
+    <div class="letter">
+        <div class="letter-content">
+            <h1>Dev,</h1>
+            <p>I wanted to let you know how much I appreciate you.</p>
+            <p>I am so grateful that you're a part of my life.</p>
+            <p>You bring an incredibly positive spirit & make me feel so motivated.</p>
+            <p>Being a part of your life is so worth seeing you every 2 weeks.</p>
+            <p>I appreciate how patient you are with me and I truly believe you want the best for me.</p>
+            <p>You're so kind, mature, sexy, smart, lovable and really are a gentleman.</p>
+            <p>You deserve the most from life and I hope I can give you exactly what you need.</p>
+            <p>To know you've desired me for so long makes me believe you do feel grateful and lucky to have me.</p>
+            <p>I know I can't call you my boyfriend but I hope soon when the time is right that I can finally call you mine.</p>
+            <p>Can't wait to see you on the weekend and give you infinite cuddles.</p>
+            <p>You're the best.</p>
+            <p>Forever yours,</p>
+            <p>Sim</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
